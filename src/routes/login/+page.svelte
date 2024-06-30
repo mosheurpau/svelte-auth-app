@@ -3,11 +3,14 @@
 
   let username = "";
   let password = "";
+  let role = ""; // New field for role
 
   async function handleLogin() {
     // Replace with actual login logic
     if (username && password) {
-      authStore.login(username);
+      // Here I should validate the credentials and get the role from my backend
+      const userRole = role.toLowerCase(); // Replace this with the actual role from my backend
+      authStore.login(username, userRole);
       window.location.href = "/";
     } else {
       console.error("Login failed: Invalid credentials");
@@ -41,6 +44,16 @@
       bind:value={password}
       class="shadow border rounded w-full py-2 px-3 text-gray-700 mb-3"
       placeholder="Password"
+    />
+  </div>
+  <div class="mb-6">
+    <label class="block text-gray-700 text-sm mb-2" for="role">Role</label>
+    <input
+      id="role"
+      type="text"
+      bind:value={role}
+      class="shadow border rounded w-full py-2 px-3 text-gray-700 mb-3"
+      placeholder="Role"
     />
   </div>
   <div class="flex items-center justify-between">
