@@ -15,7 +15,7 @@
 </script>
 
 {#if products}
-  <div class="grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mx-auto">
     {#each products as product, index}
       <div class="card bg-base-100 w-96 shadow-xl border-2 mx-auto">
         <figure>
