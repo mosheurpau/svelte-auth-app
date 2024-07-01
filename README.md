@@ -1,6 +1,6 @@
 # Svelte Authentication App
 
-This project is a simple Svelte application that demonstrates authentication and role base authorization using Svelte stores. It includes login and logout functionality with client-side state management.Using Async/Await fetch product data from API and slugs used for dynamic routes and styled using Tailwind CSS and daisy ui.
+This project is a simple Svelte application that demonstrates authentication and role base authorization using Svelte stores. It includes login and logout functionality with client-side state management. Using Async/Await fetch product data from API and slugs used for dynamic routes and styled using Tailwind CSS and daisy ui.
 
 ## Features
 

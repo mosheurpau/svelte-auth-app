@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   let products = null;
 
   async function fetchData() {
@@ -7,7 +8,9 @@
     products = data.products; // Access the array of products
   }
 
-  fetchData();
+  onMount(() => {
+    fetchData();
+  });
 
   $: {
     console.log(products);
